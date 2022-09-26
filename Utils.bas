@@ -46,10 +46,6 @@ End Sub
 Public Function LookupFolderByAddress(ByVal Address As String) As String
     On Error GoTo ErrKill
     
-    If map.Count = 0 Then
-        InitMap
-    End If
-    
     LookupFolderByAddress = map(LCase$(Address))
     Exit Function
     
